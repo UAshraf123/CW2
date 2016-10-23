@@ -1,12 +1,13 @@
-from flask import Flask
+from flask import Flask, render_template, request, redirect, url_for, abort
 app = Flask(__name__)
 
 @app.route("/")
-def hello():
-  return "<h1>Hello Napier</h1>"
+def index():
+  return render_template('index.html')
 
 if __name__ == "__main__":
-  app.run(host='0.0.0.0')
+  app.run(host='0.0.0.0', debug=True)
+
 
 
 
