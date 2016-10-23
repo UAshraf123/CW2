@@ -5,6 +5,14 @@ app = Flask(__name__)
 def index():
   return render_template('index.html')
 
+@app.route("/DC2/")
+def DC2():
+  return render_template('DC2.html')
+
+@app.route("/DC5/")
+def DC5():
+  return render_template('DC5.html')
+
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug=True)
 
