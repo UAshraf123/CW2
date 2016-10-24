@@ -13,10 +13,10 @@
         <div id="menu" class="container">
                 <ul>  
                       <li><a href="/">Homepage</a></li>
-                      <li class="current_page_item"><a href="/DC2/">DC2</a></li>
-                      <li><a href="DC5">DC5</a></li>
-                      <li><a href="Supra">Supra</a></li>
-                      <li><a href="s13">S13</a></li>
+                      <li><a href="{{ url_for('DC2') }}">DC2</a></li>
+                      <li><a href="{{ url_for('DC5') }}">DC5</a></li>
+                      <li><a href="{{ url_for('Supra') }}">SUPRA</a></li>
+                      <li><a href="{{ url_for
                       <li><a href="s15">S15</a></li>
                       <li><a href="chaser">Chaser</a></li>
                 </ul>
@@ -24,7 +24,7 @@
 </div>
 <div id="page" class="container">
         <div id="box1">
-         <h2 class="title"><a href="/">Honda Integra DC2 (year 96-00)</a></h2>
+         <h2 class="title"><a href="{{ url_for('DC2') }}">Honda Integra DC2 (year 96-00)</a></h2>
          <div style="clear: both;">&nbsp;</div>
          <div class="entry">
              <p>The<strong> Integra Type R DC2</strong> is an iconic japanese classic,
