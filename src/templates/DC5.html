@@ -13,18 +13,18 @@
         <div id="menu" class="container">
                 <ul>  
                       <li><a href="/">Homepage</a></li>
-                      <li><a href="DC2">DC2</a></li>
+                      <li><a href="{{ url_for('DC2') }}">DC2</a></li>
                       <li><a href="{{ url_for('DC5') }}">DC5</a></li>
-                      <li><a href="Supra">Supra</a></li>
-                      <li><a href="S13">S13</a></li>
-                      <li><a href="S15">S15</a></li>
-                      <li><a href="Chaser">Chaser</a></li>
+                      <li><a href="{{ url_for('Supra') }}">SUPRA</a></li>
+                      <li><a href="{{ url_for('S13') }}">S13</a></li>  
+                      <li><a href="{{ url_for('S15') }}">S15</a></li>
+                      <li><a href="{{ url_for('Chaser') }}">CHASER</a></li>
                 </ul>
         </div>
 </div>
 <div id="page" class="container">
         <div id="box1">
-         <h2 class="title"><a href="/">Honda Integra DC5 (year 01-06</a></h2>
+         <h2 class="title"><a href="{{ url_for('DC5') }}">Honda Integra DC5 (year 01-06)</a></h2>
          <div style="clear: both;">&nbsp;</div>
          <div class="entry">
              <p>This is the  <strong>Integra Type R DC5</strong>, another front
