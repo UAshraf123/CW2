@@ -13,6 +13,11 @@ def DC2():
 def DC5():
   return render_template('DC5.html')
 
+@app.route("/Supra/")
+def Supra():
+  return render_template('Supra.html')
+
+
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug=True)
 
