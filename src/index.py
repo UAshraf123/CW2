@@ -9,7 +9,7 @@ def index():
 def DC2():
   return render_template('DC2.html')
 
-@app.route("/DC5/")
+@app.route("/DC5")
 def DC5():
   return render_template('DC5.html')
 
