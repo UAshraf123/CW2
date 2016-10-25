@@ -29,6 +29,9 @@ def S15():
 def Chaser():
   return render_template('Chaser.html')
 
+@app.errorhandler(404)
+  return "<strong>Oops!!! Could not find the page you requested! Please return to home page and try again =]</strong>" 
+
 
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug=True)
