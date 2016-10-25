@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, abort
 app = Flask(__name__)
 
+
 @app.route("/")
 def index():
   return render_template('index.html')
@@ -30,7 +31,8 @@ def Chaser():
   return render_template('Chaser.html')
 
 @app.errorhandler(404)
-  return "<strong>Oops!!! Could not find the page you requested! Please return to home page and try again =]</strong>" 
+def page_not_found (error):
+  return render_template('error404.html')
 
 
 if __name__ == "__main__":
