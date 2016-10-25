@@ -32,7 +32,7 @@ def Chaser():
 
 @app.errorhandler(404)
 def page_not_found (error):
-  return render_template('error404.html')
+  return "<strong>OOPS!!!! PAGE NOT FOUND!! PLEASE RETURN TO HOMEPAGE =]</STRONG>"
 
 
 if __name__ == "__main__":
