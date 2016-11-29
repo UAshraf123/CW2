@@ -1,11 +1,11 @@
 ***Web app Created by Usman Ashraf - 40096834***
 
 To run app, run levinux and pull GIT clone from: 
-https://github.com/UAshraf123/CW1.git
+https://github.com/UAshraf123/CW2.git
 
 Go into the src folder via the following linux command: 
 
-cd/home/tc/CW1/src
+cd/home/tc/CW2/src
 
 Within this directory, you will find python script "index.py"
 
@@ -21,4 +21,3 @@ This will open the web app.
 To close everything down, press CTRL+C within levenix, and shut down levenix
 safely by typing "sudo poweroff". 
 
-**TEST**
