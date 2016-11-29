@@ -263,3 +263,7 @@ ul.style1 .first
 
 }
 
+#map {
+        height: 400px;
+        width: 100%;
+}
