@@ -30,6 +30,10 @@ def S15():
 def Chaser():
   return render_template('Chaser.html')
 
+@app.route("/Map/")
+def Map():
+  return render_template('Map.html')
+
 @app.errorhandler(404)
 def page_not_found (error):
   return "<strong>OOPS!!!! PAGE NOT FOUND!! PLEASE RETURN TO HOMEPAGE =]</STRONG>"
