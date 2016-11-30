@@ -20,7 +20,7 @@ class FlaskTestCase(unittest.TestCase):
     def test_index_DC2(self):
         tester = app.test_client(self)
         response = tester.get('/DC2', content_type='html/text')
-        self.assertTrue(b'Honda Integra DC2 (year 96-00)' in response.data)
+        self.assertTrue(b'Honda Integra DC2' in response.data)
         
 
         
