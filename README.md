@@ -22,3 +22,6 @@ This will open the web app.
 
 To close everything down, press CTRL+C within levenix, and shut down levenix
 safely by typing "sudo poweroff". 
+
+
+**TESTING** Can be done by typing: python test.py - when in the correct level ( cd /home/tc/CW2/src ) 
