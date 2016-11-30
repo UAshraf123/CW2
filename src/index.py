@@ -44,7 +44,7 @@ def Map():
 def page_not_found (error):
   return render_template('404.html')
 
-@app.route('/)
+@app.route('/')
 def index():
            this_route = url_for('.index')
            app.logger.info("Logging a test message from "+this_route)
