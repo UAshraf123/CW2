@@ -13,7 +13,7 @@ app.logger.addHandler(file_handler)
 
 @app.route("/")
 def index():
-  return render_template('index.html')
+  return 1 / 0
 
 
 @app.route("/DC2/")
