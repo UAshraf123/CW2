@@ -1,7 +1,7 @@
 from flask import Flask, flash, render_template, request, redirect, url_for, abort
 import ConfigParser
 import logging
-from logging.handlers import RotatingFileHandler, WARNING
+from logging import FileHandler, WARNING
 
 app = Flask(__name__)
 app.secret_key = 'supersecret'
