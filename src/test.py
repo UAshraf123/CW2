@@ -22,6 +22,12 @@ class FlaskTestCase(unittest.TestCase):
         response = tester.get('/DC2/', content_type='html/text')
         self.assertTrue(b'Honda Integra DC2 (year 96-00)' in response.data)
         
+    #this ensures that the correct page loads (DC5 page in this case).
+    def test_index_DC5(self):
+        tester = app.test_client(self)
+        response = tester.get('/DC5', content_type='html/text')
+        self.assertTrue(b'Honda Integra DC5 (year 01-06)' in response.data)
+        
 
         
 
