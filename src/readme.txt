@@ -5,7 +5,7 @@ https://github.com/UAshraf123/CW2.git
 
 Go into the src folder via the following linux command: 
 
-cd/home/tc/CW2/src
+cd /home/tc/CW2/src
 
 Within this directory, you will find python script "index.py"
 
@@ -21,3 +21,5 @@ This will open the web app.
 To close everything down, press CTRL+C within levenix, and shut down levenix
 safely by typing "sudo poweroff". 
 
+
+**TESTING** Can be done by typing: python test.py - when in the correct level ( cd /home/tc/CW2/src ) 
