@@ -4,6 +4,7 @@ import unittest
 
 class FlaskTestCase(unittest.TestCase):
 
+    #this ensures flask is set up without issues.
     def test_index(self):
         tester = app.test_client(self)
         response = tester.get('/', content_type='html/text')
