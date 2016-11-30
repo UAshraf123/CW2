@@ -1,11 +1,15 @@
-from app import app
+import testing
 import unittest
 
 
-class TestCaseOne(unittest.TestCase):
-
-    #ensure that flask is set up without issues
-    def test_index(self):
-        tester = app.test_client(self)
-        response = tester.get('/', content_type='html/text')
-        self.assertEqual(response.status_code, 200)
+class TestingTest(unittest.TestCase):
+     def test_root(self):
+        self.app = testing.app.test_client()
+        out = self.app.get(’/’)
+        assert ’200 OK’ in out.status
+        assert ’charset=utf -8’ in out.content_type
+        assert ’text/html’ in out.content_type
+        
+        
+        if __name__ == "__main__":
+            unittest.main()
