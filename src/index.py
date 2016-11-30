@@ -6,14 +6,14 @@ from logging import FileHandler, WARNING
 app = Flask(__name__)
 app.secret_key = 'supersecret'
 
-file_handler = FileHandler('var/loggingapp.log')
+file_handler = FileHandler('errorlog.txt')
 file_handler.setLevel(WARNING)
 
 app.logger.addHandler(file_handler)
 
 @app.route("/")
 def index():
-  return 1 / 0
+  return render_template('index.html')
 
 
 @app.route("/DC2/")
