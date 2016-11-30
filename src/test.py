@@ -14,7 +14,7 @@ class FlaskTestCase(unittest.TestCase):
     def test_index_homepage(self):
         tester = app.test_client(self)
         response = tester.get('/', content_type='html/text')
-        self.assertTrue(b'Welcome to JDM Guddi' in response.data)
+        self.assertTrue(b'Welcome to JDM Cars' in response.data)
 
         
           
