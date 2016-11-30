@@ -13,7 +13,7 @@ app.logger.addHandler(file_handler)
 
 @app.route("/")
 def index():
-  return 1 / 2
+  return render_template('index.html')
 
 
 @app.route("/DC2/")
@@ -49,7 +49,7 @@ def page_not_found (error):
   return render_template('404.html')
 
 if __name__ == "__main__":
-  app.run(host='0.0.0.0')
+  app.run(host='0.0.0.0', debug=True)
 
 
 
