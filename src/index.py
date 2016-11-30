@@ -1,12 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, abort
-from flask_googlemaps import GoogleMaps
 app = Flask(__name__)
 
-app.config['GOOGLEMAPS_KEY'] = "AIzaSyD8lo57FQDuV0Y9c_RcjjxUrJIfXFb-3O0"
 
-GoogleMaps(app)
-
-GoogleMaps(app, key="AIzaSyD8lo57FQDuV0Y9c_RcjjxUrJIfXFb-3O0")
 
 @app.route("/")
 def index():
