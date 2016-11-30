@@ -6,14 +6,7 @@ app.secret_key = 'supersecret'
 @app.route("/")
 def index():
   return render_template('index.html')
-  return "Root Page"
 
-@app.route('/<message>')
-def login(message):
-    if (message != None):
-      flash(message)
-    flash("Greetings from Usman, enjoy your stay!") 
-    return "Greetings from Usman, enjoy your stay!"
 
 @app.route("/DC2/")
 def DC2():
