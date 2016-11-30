@@ -7,8 +7,14 @@
 <body>
 
 {% with messages = get_flashed_messages() %} 
-{% if messages %}
-<ul> {% for message in messages %} <li>{{ message | safe}}</li> {% endfor %} </ul> {% endif %} {% endwith %}
+  {% if messages %}
+    <ul>
+    {% for message in messages %}
+      <li>{{ message | safe}}</li>
+       {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %
 
 <div id="logo" class="container">
        <h1><a href="/">JDM Cars</a></h1>
