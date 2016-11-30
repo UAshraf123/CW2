@@ -1,13 +1,13 @@
 from flask import Flask, flash, render_template, request, redirect, url_for, abort
 import ConfigParser
 import logging
-from logging import FileHandler, WARNING
+from logging import FileHandler, DEBUG
 
 app = Flask(__name__)
 app.secret_key = 'supersecret'
 
 file_handler = FileHandler('errorlog.txt')
-file_handler.setLevel(WARNING)
+file_handler.setLevel(DEBUG)
 
 app.logger.addHandler(file_handler)
 
