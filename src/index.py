@@ -53,18 +53,16 @@ def index():
 def init(app):
            config = ConfigParser.ConfigParser()
            try:
-        config_location = "etc/logging.cfg"
-        config.read(config_location)
-           
-        app.config['DEBUG'] = config.get ("config", "debug")
-        app.config['ip_address'] = config.get("config", "ip_address")
-        app.config['port'] = config.get("config", "port")
-        app.config['url'] = config.get("config", "url")
-           
-        app.config['log_file'] = config.get("logging", "name")
-        app.config['log_location'] = config.get("logging", "location")
-        app.config['log_level'] = config.get("logging", "level")
-        except
+              config_location = "etc/logging.cfg"
+              config.read(config_location)
+              app.config['DEBUG'] = config.get ("config", "debug")
+              app.config['ip_address'] = config.get("config", "ip_address")
+              app.config['port'] = config.get("config", "port")
+              app.config['url'] = config.get("config", "url")
+              app.config['log_file'] = config.get("logging", "name")
+              app.config['log_location'] = config.get("logging", "location")
+              app.config['log_level'] = config.get("logging", "level")
+          except
            print "could not read configs from: ", config_location
            
 def logs(app):
