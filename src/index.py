@@ -13,7 +13,7 @@ def login(message):
     if (message != None):
       flash(message)
     flash("A default message") 
-  return "Greetings from Usman, enjoy your stay!"
+    return "Greetings from Usman, enjoy your stay!"
 
 @app.route("/DC2/")
 def DC2():
