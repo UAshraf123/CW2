@@ -62,9 +62,9 @@ def init(app):
               app.config['log_file'] = config.get("logging", "name")
               app.config['log_location'] = config.get("logging", "location")
               app.config['log_level'] = config.get("logging", "level")
-          except
-           print "could not read configs from: ", config_location
-           
+           except:
+              print "could not read configs from: ", config_location
+              
 def logs(app):
            log_pathname = app.config['log_location'] + app.config['log_file']
            file_handler = RotatingFileHandler(log_pathname, maxBytes=1024* 1024 * 10 , backupCount=1024)
