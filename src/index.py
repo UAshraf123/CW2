@@ -9,7 +9,7 @@ app.secret_key = 'supersecret'
 file_handler = FileHandler('var/loggingapp.log')
 file_handler.setLevel(WARNING)
 
-app.logger.addHandler(file handler)
+app.logger.addHandler(file_handler)
 
 @app.route("/")
 def index():
