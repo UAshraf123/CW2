@@ -45,7 +45,7 @@ def page_not_found (error):
   return render_template('404.html')
 
 @app.route('/')
-def index():
+def root():
            this_route = url_for('.index')
            app.logger.info("Logging a test message from "+this_route)
            return "Configuration testing with logging"
