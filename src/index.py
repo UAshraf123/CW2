@@ -76,11 +76,11 @@ def logs(app):
 
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug=True)
-           init(app)
-           logs(app)
-           app.run(
-             host=app.config['ip_address'],
-             port=int(app.config['port']))
+  init(app)
+  logs(app)
+  app.run(
+    host=app.config['ip_address'],
+    port=int(app.config['port']))
 
 
 
