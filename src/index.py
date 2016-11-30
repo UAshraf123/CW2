@@ -37,7 +37,7 @@ def Map():
 
 @app.errorhandler(404)
 def page_not_found (error):
-  return "<strong>OOPS!!!! PAGE NOT FOUND!! PLEASE RETURN TO HOMEPAGE =]</STRONG>"
+  return render_template('404.html')
 
 
 if __name__ == "__main__":
