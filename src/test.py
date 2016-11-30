@@ -19,7 +19,7 @@ class FlaskTestCase(unittest.TestCase):
     #this ensures that the correct page loads (DC2 page in this case).
     def test_index_DC2(self):
         tester = app.test_client(self)
-        response = tester.get('/DC2', content_type='html/text')
+        response = tester.get('/DC2/', content_type='html/text')
         self.assertTrue(b'The Integra Type R DC2' in response.data)
         
 
