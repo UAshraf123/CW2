@@ -1,4 +1,4 @@
-from index import app
+from app import index
 import unittest
 
 
