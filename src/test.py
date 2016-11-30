@@ -4,11 +4,10 @@ import unittest
 
 class FlaskTestCase(unittest.TestCase):
 
-    #ensure that flask is set up correctly
-    def test_index(self):
-        tester = index.test_client(self)
-        response = tester.get('/index', content_type='html/text')
-        self.assertEqual(response.status_code, 200)
-
+def test(self):
+        tester = app.test_client(self)
+        response = tester.get('/DC2', content_type='html/text')
+        self.assertTrue(b'Integra' in response.data)
+        
 if __name__ == '__main__':
     unittest.main()
