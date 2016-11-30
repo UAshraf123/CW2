@@ -1,19 +1,19 @@
 from flask import Flask, flash, render_template, request, redirect, url_for, abort
 import ConfigParser
 import logging
-from logging import FileHandler, DEBUG
+from logging import FileHandler, WARNING
 
 app = Flask(__name__)
 app.secret_key = 'supersecret'
 
 file_handler = FileHandler('errorlog.txt')
-file_handler.setLevel(DEBUG)
+file_handler.setLevel(WARNING)
 
 app.logger.addHandler(file_handler)
 
 @app.route("/")
 def index():
-  return render_template('index.html')
+  return 1 / 2
 
 
 @app.route("/DC2/")
