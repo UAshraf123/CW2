@@ -8,11 +8,10 @@ def index():
   return render_template('index.html')
   return "Root Page"
 
-@app.route('/'<message>)
+@app.route('/<message>')
 def login(message):
   if (message != None):
     flash(message)
-  flash ("A default message")
   return "Greetings from Usman, enjoy your stay!"
 
 @app.route("/DC2/")
